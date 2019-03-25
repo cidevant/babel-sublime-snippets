@@ -1,0 +1,29 @@
+<snippet>
+    <content><![CDATA[
+//@flow
+import React, { type Node } from 'react';
+
+type TProps = {
+
+};
+
+/**
+ * ${1:${TM_FILENAME/(.+)\..+|.*/$1/:ComponentName}}
+ * @param {TProps} props Component properties
+ * @returns {Node} ${1:${TM_FILENAME/(.+)\..+|.*/$1/:ComponentName}} component
+ */
+function ${1:${TM_FILENAME/(.+)\..+|.*/$1/:ComponentName}}(props: TProps): Node {
+	render() {
+		return ${2:(
+			${3:<div>${0}</div>}
+		);}
+	}
+}
+
+export default ${1:${TM_FILENAME/(.+)\..+|.*/$1/:ComponentName}};
+
+]]></content>
+    <tabTrigger>frcsfc</tabTrigger>
+    <scope>source.js -(meta)</scope>
+    <description>(Flow) Create SFC</description>
+</snippet>
