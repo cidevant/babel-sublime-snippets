@@ -13,11 +13,9 @@ type TProps = {
  * @returns {Node} ${1:${TM_FILENAME/(.+)\..+|.*/$1/:ComponentName}} component
  */
 function ${1:${TM_FILENAME/(.+)\..+|.*/$1/:ComponentName}}(props: TProps): Node {
-	render() {
-		return ${2:(
-			${3:<div>${0}</div>}
-		);}
-	}
+   return ${2:(
+        ${3:<div>${0}</div>}
+    );}
 }
 
 export default ${1:${TM_FILENAME/(.+)\..+|.*/$1/:ComponentName}};
